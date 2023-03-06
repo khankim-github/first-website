@@ -1,11 +1,58 @@
 .navbar{
-
+    display: flex;
+    justify-content: space-around;
 }
 
 .box-main-body{
-
+    display: grid;
+    grid-template: 1fr / 1fr 8fr 1fr;
 }
 
 .main-body{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    grid-area: 1 / 2 / 1 / 2;
+}
 
+.gallery{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+div.gallery > div{
+    max-width: 100%;
+}
+
+fieldset{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+fieldset > div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div.cell-gallery > img{
+    max-width: 100%;
+}
+
+.input-box{
+    display: grid;
+    grid-template: 1fr / 5rem 1fr;
+}
+
+.page-title{
+    display: flex;
+    justify-content: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
 }
